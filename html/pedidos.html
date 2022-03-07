@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/pasteleria.png" width="100" height="100" class="d-inline-block align-top" alt="">
+        </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Pasteles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pedidos.html">Pedidos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inventario.html">Inventario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ordenes.html">Ordenes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="number" class="form-control" id="telefono" placeholder="Telefono">
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="email" class="form-control" id="correo" placeholder="Correo">
+            </div>
+            <div class="form-group">
+                <label for="sabor">Sabor</label>
+                <select class="form-control" id="sabor">
+                    <option>Rompope</option>
+                    <option>Moka</option>
+                    <option>Chocolate</option>
+                    <option>Vainilla</option>
+                    <option>Fresa</option>
+                    <option>Menta</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="topping">Topping</label>
+                <select class="form-control" id="topping">
+                    <option>Lunetas</option>
+                    <option>Nuez</option>
+                    <option>Almendra</option>
+                    <option>Coco</option>
+                    <option>Frutas</option>
+                    <option>Gomitas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Describe tu pastel</label>
+                <textarea class="form-control" id="descripcion" rows="3"></textarea>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Ordenar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
